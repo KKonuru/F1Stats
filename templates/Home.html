@@ -2,16 +2,17 @@
 {% block title %}Homepage{% endblock %} 
 {% block body %} 
     <div class="row row-cols-1 row-cols-md-2">
-        {% for driver in value %}
+        {% for i in range(0,value|length) %}
         <div class="col mb-4">
-            <div class="card" style="width: 18rem;">
-                <img src="checo.png" class="card-img-top" alt="Card image cap">
+            <div class="card" style="width: 18rem">
+                <img class="card-img-top" src="{{images[i]}}" alt="{{value[i]}}">
                     <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">{{driver}}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">{{value[i]}}</p>
+                    <a href="{{url_for('driver',name=value[i])}}" class="btn btn-primary">Go somewhere</a>
                     </div>
             </div>
         </div>
         {% endfor %} 
+        </div>
 {% endblock %} 
