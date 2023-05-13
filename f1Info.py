@@ -25,8 +25,6 @@ def getImages():
         images.append(img["data-src"])
     return images
 
-images = getImages()
-print(images)
 
 
 
