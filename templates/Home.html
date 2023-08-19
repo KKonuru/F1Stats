@@ -1,6 +1,13 @@
 {% extends "base.html" %} 
 {% block title %}Homepage{% endblock %} 
 {% block body %} 
+    <div class="container-fluid bg-light py-5">
+        <div class="row jutify-content-center">
+            <div class="col-12 col-md-6 text-center">
+                <a href="{{url_for('/compare/')}}" class="btn btn-primary btn-lg">Click here to compare drivers</a>
+            </div>
+        </div>
+    </div>
     <div class="row row-cols-1 row-cols-md-2">
         {% for driver in value %}
             {% for img in images %}
@@ -9,8 +16,8 @@
                     <div class="card" style="width: 18rem">
                         <img class="card-img-top" src="{{img}}" alt="{{driver}}">
                             <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">{{driver}}</p>
+                            <h5 class="card-title">{{driver}}</h5>
+                            <p class="card-text"></p>
                             <a href="{{url_for('driver',name=driver)}}" class="btn btn-primary">Go somewhere</a>
                             </div>
                     </div>
