@@ -5,10 +5,9 @@ This is a project to help quickly visualize data for the graphs of _____ to comp
 Currently this website is not hosted yet but you can clone this repository. 
 First download the code by using git clone. 
 Next you must ensure you have the following libraries installed using pip:
-  Fastf1
-  Flask
-  dash
-  plotly
-  beautifulsoup
+```
+  pip install Fastf1 Flask dash plotly beautifulsoup4
+```
 Then once all the dependencies are installed then you can run the flask_app.py file to generate a localhost.
+## Project
 
