@@ -10,4 +10,9 @@ Next you must ensure you have the following libraries installed using pip:
 ```
 Then once all the dependencies are installed then you can run the flask_app.py file to generate a localhost.
 ## Project
+![Dash](https://github.com/user-attachments/assets/a90124bb-a26f-4eee-8372-23a29b7e47a5)
+
+
+
+https://github.com/user-attachments/assets/c8b9f416-b334-4c7e-b59a-fbef1b7d8fe9
 
